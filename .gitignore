@@ -1,0 +1,36 @@
+# Angular build
+dist/
+tmp/
+out-tsc/
+.angular/
+
+# Node dependencies
+node_modules/
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files (only if you add custom local envs)
+src/environments/*.local.ts
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.swp
+*.tmp
+
+# Package managers lockfiles (opcional)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
