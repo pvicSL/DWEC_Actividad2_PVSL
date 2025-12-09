@@ -1,8 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Product } from '../../services/product';
+import { Product, ProductService } from '../../services/product.service';
 
 @Component({
+  standalone: true,
   selector: 'app-product-card',
   imports: [CommonModule],
   templateUrl: './product-card.html',
@@ -10,4 +11,13 @@ import { Product } from '../../services/product';
 })
 export class ProductCard {
   @Input() product!: Product;
+
+  constructor(private productService: ProductService) { }
+
+  eliminar() {
+    this.productService.eliminarProducto(this.product._id);
+  }
+
+
 }
+
