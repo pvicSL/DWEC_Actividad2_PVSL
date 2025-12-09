@@ -39,7 +39,7 @@ export class ProductService {
   agregarProducto(datos: any) {
 
     const nuevoProducto: Product = {
-      _id: crypto.randomUUID(),   // Generamos un ID único (trampilla)
+      _id: crypto.randomUUID(),
       name: datos.name,
       description: datos.description,
       price: datos.price,
