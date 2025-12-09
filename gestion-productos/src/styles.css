@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    /* Paleta de colores */
+    --color-platano: #eedca7;
+    --color-arandano: #2d3e56;
+    --color-caramelo: #e7993f;
+    --color-menta: #aac6ad;
+    --color-chocolate: #422b21;
+    --color-vainilla: #dfcfba;
+
+    /* Bootstrap personalizado */
+    --bs-body-bg: var(--color-vainilla) !important;
+    --bs-primary: var(--color-arandano);
+    --bs-primary-rgb: 45, 62, 86;
+    --bs-dark: var(--color-chocolate) !important;
+    --bs-dark-rgb: 66, 43, 33 !important;
+    --bs-secondary: var(--color-caramelo);
+
+    /* Tipografía */
+    --bs-font-sans-serif: 'Figtree', sans-serif;
+}
+
+body {
+    background-color: var(--color-vainilla);
+}
+
+.bg-dark {
+    background-color: var(--color-chocolate) !important;
+}
+
+.btn-primary {
+    background-color: var(--color-arandano) !important;
+    border-color: var(--color-arandano) !important;
+}

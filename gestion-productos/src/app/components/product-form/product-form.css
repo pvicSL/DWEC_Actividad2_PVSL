@@ -1,0 +1,20 @@
+.card {
+    border: 2px solid var(--color-caramelo) !important;
+    background-color: white !important;
+}
+
+.form-label {
+    text-align: left !important;
+    width: 100%;
+}
+
+.form-control {
+    background-color: #cacaca;
+    border-color: #e9ecef;
+}
+
+.form-control:focus {
+    border-color: var(--color-arandano);
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+    background-color: white;
+}

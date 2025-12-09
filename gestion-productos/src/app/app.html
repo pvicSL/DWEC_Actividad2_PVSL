@@ -1,26 +1,44 @@
 <!-- CABECERA -->
-<header class="bg-dark text-white py-3 mb-4">
+<header class="bg-dark text-white py-4 mb-4">
   <div class="container d-flex justify-content-between align-items-center">
-    <h1 class="h3 m-0">Gestión de Productos</h1>
+    <h1 class="h3 m-0"
+      style="font-family: 'Figtree', sans-serif; font-weight: 600; font-size: clamp(1.5rem, 3vw, 2rem);">
+      Gestión de Productos
+    </h1>
 
     <nav>
       <a href="#" class="text-white text-decoration-none me-3">Inicio</a>
-      <a href="#" class="text-white text-decoration-none">Contacto</a>
+      <a href="#" class="text-white text-decoration-none me-3">Contacto</a>
+      <a href="#" class="text-white text-decoration-none me-3">Iniciar sesión</a>
+      <a href="#" class="text-white text-decoration-none">Soporte</a>
     </nav>
   </div>
 </header>
 
 <!-- CONTENIDO PRINCIPAL -->
-<main class="container mb-5">
-  <p class="text-muted text-center">
-    <app-product-form (productoCreado)="onProductoCreado($event)"></app-product-form>
-    <app-products-list></app-products-list>
-  </p>
+<main class="container mb-8 py-4" style="background-color: var(--color-vainilla);">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-10">
+
+      <div class="row mb-8">
+        <div class="col-12 col-md-8 mx-auto">
+          <app-product-form (productoCreado)="onProductoCreado($event)"></app-product-form>
+        </div>
+      </div>
+
+      <div class="row mt-5 py-3">
+        <div class="col-12">
+          <app-products-list></app-products-list>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </main>
 
 <!-- FOOTER -->
-<footer class="bg-light py-3 text-center border-top mt-5">
-  <p class="m-0 text-muted">
+<footer class="bg-dark text-white py-3 text-center border-top mt-5">
+  <p class="m-0">
     © 2025 · Actividad DWEC · Angular 18 - Patricia V. Sanz López
   </p>
 </footer>

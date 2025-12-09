@@ -1,0 +1,19 @@
+.card {
+    border-radius: 10px;
+    border: 2px solid var(--color-caramelo) !important;
+    background-color: white !important;
+}
+
+.card-body h5 {
+    font-size: 1.15rem;
+}
+
+.btn-secondary {
+
+    --bs-btn-bg: var(--color-caramelo);
+    --bs-btn-border-color: var(--color-caramelo);
+    --bs-btn-color: var(--color-chocolate);
+
+    --bs-btn-hover-bg: #c98538;
+    --bs-btn-hover-border-color: #c98538;
+}
